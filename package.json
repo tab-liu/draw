@@ -13,7 +13,7 @@
     "@sentry/browser": "6.2.5",
     "@sentry/integrations": "6.2.5",
     "firebase": "8.3.3",
-    "gh-pages": "5.0.0",
+    "gh-pages": "^6.1.1",
     "i18next-browser-languagedetector": "6.1.4",
     "idb-keyval": "6.0.3",
     "jotai": "1.13.1",
@@ -87,6 +87,7 @@
     "autorelease": "node scripts/autorelease.js",
     "prerelease:excalidraw": "node scripts/prerelease.js",
     "build:preview": "yarn build && vite preview --port 5000",
-    "release:excalidraw": "node scripts/release.js"
+    "release:excalidraw": "node scripts/release.js",
+    "deploy": "gh-pages -d build"
   }
 }
